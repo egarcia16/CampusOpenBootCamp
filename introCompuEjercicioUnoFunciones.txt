@@ -1,0 +1,31 @@
+public class MyClass {
+    public static void main(String args[]) {
+      //Imprmiendo la funcion de suma
+      System.out.println("La suma de las tres numeros es: " + tresNumeroSumados(1,2,3));
+      
+      System.out.println("\n");
+      
+      //Instanciando el objeto Coche
+      Coche miCoche = new Coche();
+      //Agregando puertas al coche
+      miCoche.setNumPuertas(1);
+      //Imprimiendo las puertas de mi coche
+      System.out.println("El numero de puertas de mi coche es: " + miCoche.getNumPuertas());
+      
+    }
+    public static int tresNumeroSumados(int a, int b, int c){
+        return a + b + c;
+    }
+    public static class Coche{
+        private int numPuertas;
+        
+        public void setNumPuertas(int numPuertas) {
+        this.numPuertas = numPuertas;
+        }
+        
+        public int getNumPuertas() {
+        return numPuertas;
+        }
+        
+    }
+}
